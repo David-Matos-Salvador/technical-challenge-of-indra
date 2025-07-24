@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  proyecto-b:
+    build:
+      context: ./indra-technical-test-1
+    ports:
+      - "4400:80"
+    restart: always
+  proyecto-a:
+    build:
+      context: ./indra-technical-test-2
+    ports:
+      - "4300:80"
+    restart: always
+
