@@ -1,36 +1,40 @@
-# Indra Technical Test
+## Indra Technical Test
 
-Este proyecto es una aplicación web desarrollada con Angular, orientada a la gestión de vehículos y cotizaciones. A continuación se describe lo realizado hasta el momento:
+Este proyecto es una prueba técnica desarrollada con Angular. A continuación se describe lo realizado hasta el momento:
 
-## Estructura del Proyecto
+### Estructura del Proyecto
 
-El proyecto está organizado de la siguiente manera:
+- **indra-technical-test-1/**: Carpeta principal del frontend Angular.
+  - `angular.json`, `tsconfig.json`, `package.json`: Archivos de configuración de Angular y dependencias.
+  - `Dockerfile`, `docker-compose.yml`, `nginx.conf`: Archivos para contenerización y despliegue.
+  - `public/`: Archivos públicos como favicon.
+  - `src/`: Código fuente principal.
+    - `app/`: Módulo principal de la aplicación.
+      - `core/interfaces/`: Interfaces TypeScript para entidades como vehículo y cotización.
+      - `pages/`: Componentes de páginas, incluyendo gestión de vehículos.
+        - `vehicle/`: Página de vehículos con componentes para formulario y listado.
+      - `shared/services/`: Servicios para interacción con Supabase y lógica de vehículos.
 
-- **src/app/core/interfaces/**: Contiene las interfaces principales, como `quotation.interface.ts` y `vehicle.interface.ts`, que definen la estructura de los datos manejados en la aplicación.
-- **src/app/pages/vehicle/**: Incluye el componente principal de vehículos y sus rutas.
-- **src/app/pages/vehicle/components/**: Aquí se encuentran los componentes reutilizables relacionados con vehículos:
-  - `vehicle-form`: Formulario para agregar o editar vehículos.
-  - `vehicle-list`: Listado de vehículos registrados.
-- **src/app/shared/services/**: Servicios para la gestión de datos y comunicación con Supabase:
-  - `supabase.service.ts`: Servicio para interactuar con la base de datos Supabase.
-  - `vehicle.service.ts`: Servicio específico para operaciones CRUD de vehículos.
+### Funcionalidades Implementadas
 
-## Funcionalidades Implementadas
+- **Gestión de vehículos**: Listado y formulario para agregar/editar vehículos.
+- **Servicios**: Integración con Supabase para persistencia de datos.
+- **Interfaces**: Definición de modelos para vehículos y cotizaciones.
+- **Contenerización**: Configuración de Docker y Nginx para facilitar el despliegue.
 
-- **Listado de vehículos**: Visualización de todos los vehículos registrados en la base de datos.
-- **Formulario de vehículos**: Permite crear y editar vehículos.
-- **Integración con Supabase**: Se ha configurado la conexión con Supabase para persistencia de datos.
+### Tecnologías Utilizadas
 
-## Configuración y Archivos Clave
+- Angular
+- TypeScript
+- Supabase
+- Docker
+- Nginx
 
-- `angular.json`, `tsconfig.json`, `docker-compose.yml`, `Dockerfile`, `nginx.conf`: Archivos de configuración para Angular, TypeScript y despliegue con Docker y Nginx.
-- `public/`, `src/`: Carpetas principales de recursos y código fuente.
+### Próximos pasos
 
-## Próximos pasos
-
-- Implementar la gestión de cotizaciones.
-- Mejorar la interfaz de usuario y agregar validaciones.
-- Realizar pruebas unitarias y de integración.
+- Implementar autenticación y autorización.
+- Mejorar la gestión de cotizaciones.
+- Añadir pruebas unitarias y de integración.
 
 ---
-Este README se irá actualizando conforme avance el desarrollo del proyecto.
+Este README se irá actualizando conforme avance el desarrollo.
