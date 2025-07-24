@@ -1,3 +1,6 @@
 [submodule "indra-technical-test-1"]
 	path = indra-technical-test-1
 	url = https://github.com/David-Matos-Salvador/indra-technical-test-1.git
+[submodule "indra-technical-test-2"]
+	path = indra-technical-test-2
+	url = https://github.com/David-Matos-Salvador/indra-technical-test-2.git
